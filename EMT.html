@@ -1,0 +1,1011 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>Emoji Mapping (Phy Challenge)</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font:
+          13px/1.45 -apple-system,
+          "Helvetica Neue",
+          Arial,
+          sans-serif;
+        background: #f4f4f6;
+        color: #111;
+      }
+      header {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        align-items: center;
+        padding: 8px 10px;
+        background: #1c1c1e;
+        color: #eee;
+      }
+      header button,
+      header label.btn,
+      header input[type="text"] {
+        font: inherit;
+        padding: 5px 9px;
+        border: 1px solid #444;
+        border-radius: 6px;
+        background: #2c2c2e;
+        color: #eee;
+        cursor: pointer;
+      }
+      header input[type="text"] {
+        width: 260px;
+        cursor: text;
+      }
+      header .sp {
+        flex: 1;
+      }
+      #zoomLbl {
+        min-width: 44px;
+        text-align: center;
+        color: #f7931a;
+        font-weight: 700;
+      }
+      #main {
+        display: flex;
+        height: calc(100vh - 92px);
+      }
+      #canvasArea {
+        flex: 1;
+        overflow: auto;
+        background: #e9e9ee;
+        padding: 24px;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      #stage {
+        position: relative;
+        background: #fff;
+        box-shadow: 0 2px 14px rgba(0, 0, 0, 0.18);
+      }
+      #world {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform-origin: 0 0;
+        cursor: crosshair;
+      }
+      #world img {
+        display: block;
+      }
+      .box {
+        position: absolute;
+        border: 2px solid #00a651;
+        background: rgba(0, 166, 81, 0.08);
+        cursor: move;
+      }
+      .box .lbl {
+        position: absolute;
+        top: -18px;
+        left: -2px;
+        font-size: 10px;
+        line-height: 14px;
+        background: #00a651;
+        color: #fff;
+        padding: 0 4px;
+        border-radius: 3px;
+        white-space: nowrap;
+      }
+      .box.sel {
+        border-color: #ff3b30;
+        background: rgba(255, 59, 48, 0.1);
+      }
+      .box.sel .lbl {
+        background: #ff3b30;
+      }
+      #tempRect {
+        position: absolute;
+        border: 2px dashed #f7931a;
+        background: rgba(247, 147, 26, 0.12);
+        pointer-events: none;
+      }
+      #side {
+        width: 430px;
+        border-left: 1px solid #ccc;
+        background: #fbfbfd;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px;
+        overflow-y: auto;
+      }
+      #side h3 {
+        margin: 2px 0;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #666;
+      }
+      #side .row {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      #side button,
+      select,
+      #side input {
+        font: inherit;
+        padding: 4px 7px;
+        border: 1px solid #bbb;
+        border-radius: 6px;
+        background: #fff;
+      }
+      #listWrap {
+        flex: 1;
+        min-height: 120px;
+        overflow: auto;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 12px;
+      }
+      td,
+      th {
+        border-bottom: 1px solid #eee;
+        padding: 3px 6px;
+        text-align: left;
+        vertical-align: top;
+      }
+      tr.sel {
+        background: #ffe8e6;
+      }
+      tr:hover {
+        background: #f2f2f2;
+      }
+      .mono {
+        font-family: ui-monospace, Menlo, monospace;
+        font-size: 11px;
+        word-break: break-all;
+      }
+      #statusbar {
+        display: flex;
+        gap: 18px;
+        padding: 5px 10px;
+        background: #1c1c1e;
+        color: #bbb;
+        font-family: ui-monospace, Menlo, monospace;
+        font-size: 11px;
+      }
+      /* Picker */
+      #picker {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 50;
+      }
+      #pickBox {
+        width: 720px;
+        max-width: 95vw;
+        max-height: 88vh;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        background: #fff;
+        border-radius: 10px;
+        padding: 12px;
+        box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+      }
+      #crop {
+        border: 2px solid #f7931a;
+        border-radius: 4px;
+        background-repeat: no-repeat;
+        image-rendering: pixelated;
+        max-width: 100%;
+        overflow: hidden;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+        gap: 2px;
+        overflow: auto;
+        max-height: 46vh;
+        padding: 4px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+      }
+      #grid button {
+        border: 0;
+        background: transparent;
+        font-size: 26px;
+        line-height: 1.2;
+        padding: 2px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      #grid button:hover {
+        background: #e8e8ea;
+      }
+      #grid img {
+        width: 32px;
+        height: 32px;
+        display: block;
+        margin: auto;
+      }
+      .hint {
+        color: #777;
+        font-size: 11px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <label class="btn"
+        >📂 Picture<input type="file" id="imgFile" accept="image/*" hidden
+      /></label>
+      <input type="text" id="urlInput" placeholder="…or insert an image URL" />
+      <button id="urlBtn">Load</button>
+      <span class="sp"></span>
+      <button id="zoomOut">−</button><span id="zoomLbl">100%</span
+      ><button id="zoomIn">+</button>
+      <button id="zoom11" title="To native pixel size (1:1)">1:1</button>
+      <span class="sp"></span>
+      <label class="btn"
+        >Load Project File<input
+          type="file"
+          id="loadProj"
+          accept=".json"
+          hidden
+      /></label>
+      <button id="saveBtn">Save Project File</button>
+      <button
+        id="csvBtn"
+        style="
+          background: #f7931a;
+          border-color: #f7931a;
+          color: #111;
+          font-weight: 700;
+        "
+      >
+        ⬇ CSV export
+      </button>
+    </header>
+
+    <div id="main">
+      <div id="canvasArea">
+        <div id="stage">
+          <div id="world"><img id="pimg" alt="" /></div>
+        </div>
+      </div>
+      <div id="side">
+        <h3>Sorting (Order = ID/CSV)</h3>
+        <div class="row">
+          <select id="sortSel">
+            <option value="angle">
+              Angle from the center (0° at the top, clockwise)
+            </option>
+            <option value="radius">Radius (inside → outside)</option>
+            <option value="read">Reading lines (top→bottom, left→right)</option>
+            <option value="x">only X</option>
+            <option value="y">only Y</option>
+          </select>
+          <label
+            >Line tolerance
+            <input id="rowTol" type="number" value="40" style="width: 56px"
+          /></label>
+          <button id="sortBtn">Sort + New No.</button>
+        </div>
+        <h3>Markings</h3>
+        <div id="listWrap">
+          <table>
+            <tbody id="listBody"></tbody>
+          </table>
+        </div>
+        <h3>Selected Box</h3>
+        <div class="row"><span id="selInfo">–</span></div>
+        <div class="row">
+          X<input id="bx" type="number" style="width: 64px" /> Y<input
+            id="by"
+            type="number"
+            style="width: 64px"
+          />
+          B<input id="bw" type="number" style="width: 64px" /> H<input
+            id="bh"
+            type="number"
+            style="width: 64px"
+          />
+          <button id="editBtn">Change Emoji</button
+          ><button id="centerBtn">Center</button>
+          <button
+            id="delBtn"
+            style="background: #ff3b30; color: #fff; border-color: #ff3b30"
+          >
+            Delete
+          </button>
+        </div>
+        <h3>Sequence (current order)</h3>
+        <div class="mono" id="seqHex"></div>
+        <div class="mono" id="seqBin"></div>
+        <div class="mono" id="seqCp"></div>
+        <div class="row">
+          <button id="copyHex">UTF8-Hex copy</button
+          ><button id="copyBin">UTF8-Bin copy</button
+          ><button id="copyCp">CP-Hex copy</button>
+        </div>
+        <div class="hint">
+          Drag a box = create a new marker · Drag (move) a box = move ·
+          Double-click = change emoji · Alt+Drag = draw over the box · Delete =
+          delete · ⌘+Ctrl+Scroll = zoom
+        </div>
+      </div>
+    </div>
+
+    <div id="statusbar">
+      <span id="statusLbl">No image loaded.</span><span id="posLbl">–</span>
+    </div>
+
+    <div id="picker">
+      <div id="pickBox">
+        <div class="row" style="display: flex; gap: 10px; align-items: center">
+          <div id="crop"></div>
+          <div style="flex: 1">
+            <b>Assign Emoji</b>
+            <div class="hint">
+              Direct input: Click the field and, on a Mac, use
+              <b>⌘+Ctrl+Space</b> to type the emoji—or select one from the Apple
+              list below.
+            </div>
+            <input
+              id="pickInput"
+              type="text"
+              placeholder="Type or insert an emoji here (applied immediately)"
+              style="width: 100%; margin-top: 6px; padding: 6px"
+            />
+          </div>
+          <button id="closePick">✕</button>
+        </div>
+        <div class="row" style="display: flex; gap: 6px">
+          <input
+            id="pickSearch"
+            type="text"
+            placeholder="Search (Name, z.B. 'cat', 'police', 'heart')"
+            style="flex: 1; padding: 6px"
+          />
+          <select id="catSel"></select>
+        </div>
+        <div id="grid"></div>
+        <div class="hint" id="gridNote"></div>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        "use strict";
+        const $ = (s) => document.querySelector(s);
+        const world = $("#world"),
+          stage = $("#stage"),
+          imgEl = $("#pimg"),
+          ca = $("#canvasArea");
+        let natW = 0,
+          natH = 0,
+          zoom = 1,
+          boxes = [],
+          nextId = 1,
+          selId = null,
+          draw = null,
+          moveB = null,
+          pendingRect = null,
+          editingId = null;
+        let EMOJIS = [],
+          byUnified = new Map();
+        const EBASE = "https://cdn.jsdelivr.net/npm/emoji-datasource-apple/";
+
+        /* ---------- Status ---------- */
+        function status() {
+          $("#statusLbl").textContent =
+            (natW ? natW + "×" + natH + " px | " : "") +
+            "Zoom " +
+            Math.round(zoom * 100) +
+            "% | " +
+            boxes.length +
+            " Markings | " +
+            EMOJIS.length +
+            " Apple-Emojis loaded";
+        }
+
+        /* ---------- Bild & Zoom ---------- */
+        function setImage(src) {
+          const im = new Image();
+          im.onload = () => {
+            natW = im.naturalWidth;
+            natH = im.naturalHeight;
+            imgEl.src = src;
+            imgEl.style.width = natW + "px";
+            imgEl.style.height = natH + "px";
+            world.style.width = natW + "px";
+            world.style.height = natH + "px";
+            setZoom(1);
+            status();
+          };
+          im.onerror = () => {
+            $("#statusLbl").textContent = "The image could not be loaded!";
+          };
+          im.src = src;
+        }
+        function setZoom(z) {
+          if (!natW) return;
+          zoom = Math.min(8, Math.max(0.2, z));
+          stage.style.width = Math.round(natW * zoom) + "px";
+          stage.style.height = Math.round(natH * zoom) + "px";
+          world.style.transform = "scale(" + zoom + ")";
+          $("#zoomLbl").textContent = Math.round(zoom * 100) + "%";
+          status();
+        }
+        $("#zoomIn").onclick = () => setZoom(zoom * 1.25);
+        $("#zoomOut").onclick = () => setZoom(zoom / 1.25);
+        $("#zoom11").onclick = () => setZoom(1);
+        ca.addEventListener(
+          "wheel",
+          (e) => {
+            if (e.ctrlKey || e.metaKey) {
+              e.preventDefault();
+              setZoom(zoom * (e.deltaY < 0 ? 1.2 : 1 / 1.2));
+            }
+          },
+          { passive: false },
+        );
+        $("#imgFile").onchange = (e) => {
+          const f = e.target.files[0];
+          if (f) setImage(URL.createObjectURL(f));
+        };
+        $("#urlBtn").onclick = () => {
+          const u = $("#urlInput").value.trim();
+          if (u) setImage(u);
+        };
+
+        /* ---------- Koordinaten ---------- */
+        function toImg(e) {
+          const r = world.getBoundingClientRect();
+          return {
+            x: (e.clientX - r.left) / zoom,
+            y: (e.clientY - r.top) / zoom,
+          };
+        }
+        function norm(d) {
+          const x = Math.max(0, Math.min(d.x0, d.x1)),
+            y = Math.max(0, Math.min(d.y0, d.y1));
+          return {
+            x: Math.round(x),
+            y: Math.round(y),
+            w: Math.round(Math.min(Math.abs(d.x1 - d.x0), natW - x)),
+            h: Math.round(Math.min(Math.abs(d.y1 - d.y0), natH - y)),
+          };
+        }
+        function metricsOf(b) {
+          const cx = b.x + b.w / 2,
+            cy = b.y + b.h / 2,
+            dx = cx - natW / 2,
+            dy = cy - natH / 2;
+          let ang = (Math.atan2(dx, -dy) * 180) / Math.PI;
+          if (ang < 0) ang += 360;
+          return { cx, cy, r: Math.hypot(dx, dy), ang };
+        }
+
+        /* ---------- Zeichnen/Verschieben ---------- */
+        world.addEventListener("mousedown", (e) => {
+          if (e.button !== 0) return;
+          e.preventDefault();
+          const p = toImg(e);
+          const bEl = e.target.closest(".box");
+          if (bEl && !e.altKey) {
+            const id = +bEl.dataset.id,
+              b = boxes.find((b) => b.id === id);
+            sel(id);
+            moveB = { id, dx: p.x - b.x, dy: p.y - b.y, moved: false };
+          } else {
+            draw = { x0: p.x, y0: p.y, x1: p.x, y1: p.y };
+            const d = document.createElement("div");
+            d.id = "tempRect";
+            world.appendChild(d);
+          }
+        });
+        window.addEventListener("mousemove", (e) => {
+          if (!natW) return;
+          const p = toImg(e);
+          $("#posLbl").textContent = Math.round(p.x) + ", " + Math.round(p.y);
+          if (draw) {
+            draw.x1 = p.x;
+            draw.y1 = p.y;
+            const d = $("#tempRect");
+            if (d) {
+              const r = norm(draw);
+              d.style.left = r.x + "px";
+              d.style.top = r.y + "px";
+              d.style.width = r.w + "px";
+              d.style.height = r.h + "px";
+            }
+          } else if (moveB) {
+            const b = boxes.find((b) => b.id === moveB.id);
+            if (b) {
+              b.x = Math.round(p.x - moveB.dx);
+              b.y = Math.round(p.y - moveB.dy);
+              moveB.moved = true;
+              renderBoxes();
+              syncSel();
+            }
+          }
+        });
+        window.addEventListener("mouseup", () => {
+          if (draw) {
+            const d = $("#tempRect");
+            if (d) d.remove();
+            const r = norm(draw);
+            draw = null;
+            if (r.w >= 6 && r.h >= 6) {
+              pendingRect = r;
+              editingId = null;
+              openPicker();
+            }
+          }
+          if (moveB) {
+            if (moveB.moved) renderList();
+            moveB = null;
+          }
+        });
+        world.addEventListener("dblclick", (e) => {
+          const bEl = e.target.closest(".box");
+          if (bEl) {
+            editingId = +bEl.dataset.id;
+            pendingRect = null;
+            sel(editingId);
+            openPicker();
+          }
+        });
+
+        /* ---------- Render ---------- */
+        function renderBoxes() {
+          world.querySelectorAll(".box").forEach((el) => el.remove());
+          for (const b of boxes) {
+            const d = document.createElement("div");
+            d.className = "box" + (b.id === selId ? " sel" : "");
+            d.dataset.id = b.id;
+            d.style.left = b.x + "px";
+            d.style.top = b.y + "px";
+            d.style.width = b.w + "px";
+            d.style.height = b.h + "px";
+            d.title = (b.name || "") + " " + (b.unified || "");
+            d.innerHTML =
+              '<span class="lbl">' +
+              b.id +
+              (b.char ? " " + b.char : "") +
+              "</span>";
+            world.appendChild(d);
+          }
+        }
+        function renderList() {
+          const tb = $("#listBody");
+          tb.innerHTML = "";
+          for (const b of boxes) {
+            const tr = document.createElement("tr");
+            if (b.id === selId) tr.className = "sel";
+            tr.dataset.id = b.id;
+            tr.innerHTML =
+              "<td>" +
+              b.id +
+              '</td><td style="font-size:16px">' +
+              (b.char || "") +
+              "</td><td>" +
+              esc(b.name || "–") +
+              '</td><td class="mono">' +
+              (b.unified || "") +
+              "</td>";
+            tr.onclick = () => {
+              sel(b.id);
+              centerOn(b);
+            };
+            tb.appendChild(tr);
+          }
+          status();
+        }
+        function sel(id) {
+          selId = id;
+          renderBoxes();
+          renderList();
+          syncSel();
+        }
+        function syncSel() {
+          const b = boxes.find((b) => b.id === selId);
+          $("#bx").value = b ? b.x : "";
+          $("#by").value = b ? b.y : "";
+          $("#bw").value = b ? b.w : "";
+          $("#bh").value = b ? b.h : "";
+          $("#selInfo").textContent = b
+            ? "#" + b.id + " " + (b.name || b.char || "–")
+            : "–";
+        }
+        function centerOn(b) {
+          const m = metricsOf(b);
+          ca.scrollTo({
+            left: m.cx * zoom - ca.clientWidth / 2 + 24,
+            top: m.cy * zoom - ca.clientHeight / 2 + 24,
+            behavior: "smooth",
+          });
+        }
+        [
+          ["bx", "x"],
+          ["by", "y"],
+          ["bw", "w"],
+          ["bh", "h"],
+        ].forEach(([k, f]) =>
+          $("#" + k).addEventListener("input", () => {
+            const b = boxes.find((b) => b.id === selId);
+            if (!b) return;
+            b[f] = parseInt($("#" + k).value, 10) || 0;
+            renderBoxes();
+            renderList();
+          }),
+        );
+        $("#delBtn").onclick = () => {
+          boxes = boxes.filter((b) => b.id !== selId);
+          selId = null;
+          renderBoxes();
+          renderList();
+          updateSeq();
+        };
+        $("#editBtn").onclick = () => {
+          if (selId != null) {
+            editingId = selId;
+            pendingRect = null;
+            openPicker();
+          }
+        };
+        $("#centerBtn").onclick = () => {
+          const b = boxes.find((b) => b.id === selId);
+          if (b) centerOn(b);
+        };
+        window.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") closePicker();
+          if (
+            (e.key === "Delete" || e.key === "Backspace") &&
+            !/INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName)
+          ) {
+            boxes = boxes.filter((b) => b.id !== selId);
+            selId = null;
+            renderBoxes();
+            renderList();
+            updateSeq();
+          }
+        });
+
+        /* ---------- Sortieren ---------- */
+        $("#sortBtn").onclick = () => {
+          const m = $("#sortSel").value,
+            M = metricsOf;
+          let a = boxes.slice();
+          if (m === "read") {
+            const tol = +$("#rowTol").value || 40;
+            a.sort((x, y) => M(x).cy - M(y).cy || M(x).cx - M(y).cx);
+            const rows = [];
+            for (const b of a) {
+              const c = M(b).cy;
+              let r = rows[rows.length - 1];
+              if (!r || c - r.cy0 > tol) {
+                r = { cy0: c, it: [] };
+                rows.push(r);
+              }
+              r.it.push(b);
+            }
+            a = [];
+            rows.forEach((r) => {
+              r.it.sort((x, y) => M(x).cx - M(y).cx);
+              a.push(...r.it);
+            });
+          } else if (m === "angle") a.sort((x, y) => M(x).ang - M(y).ang);
+          else if (m === "radius") a.sort((x, y) => M(x).r - M(y).r);
+          else if (m === "x") a.sort((x, y) => M(x).cx - M(y).cx);
+          else if (m === "y") a.sort((x, y) => M(x).cy - M(y).cy);
+          boxes = a;
+          boxes.forEach((b, i) => (b.id = i + 1));
+          nextId = boxes.length + 1;
+          selId = null;
+          renderBoxes();
+          renderList();
+          updateSeq();
+        };
+
+        /* ---------- Codes & CSV ---------- */
+        const cpsOf = (s) => Array.from(s || "").map((c) => c.codePointAt(0));
+        const utf8Of = (s) => [...new TextEncoder().encode(s || "")];
+        const hex2 = (b) => b.toString(16).toUpperCase().padStart(2, "0");
+        function updateSeq() {
+          let H = "",
+            B = "",
+            C = [];
+          for (const b of boxes) {
+            H += utf8Of(b.char).map(hex2).join("");
+            B += utf8Of(b.char)
+              .map((x) => x.toString(2).padStart(8, "0"))
+              .join("");
+            C.push(
+              cpsOf(b.char)
+                .map((c) => c.toString(16).toUpperCase().padStart(4, "0"))
+                .join("-"),
+            );
+          }
+          $("#seqHex").textContent = "UTF8-HEX: " + H;
+          $("#seqBin").textContent = "UTF8-BIN: " + B;
+          $("#seqCp").textContent = "CP-HEX: " + C.join(" | ");
+        }
+        function csvEsc(v) {
+          v = String(v);
+          return /[",\n;]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v;
+        }
+        $("#csvBtn").onclick = () => {
+          const L = [
+            "id,x,y,w,h,cx,cy,angle_deg,radius,char,name,cp_hex,cp_bin,utf8_hex,utf8_bin",
+          ];
+          for (const b of boxes) {
+            const m = metricsOf(b),
+              cps = cpsOf(b.char),
+              by = utf8Of(b.char);
+            L.push(
+              [
+                b.id,
+                b.x,
+                b.y,
+                b.w,
+                b.h,
+                m.cx,
+                m.cy,
+                m.ang.toFixed(2),
+                m.r.toFixed(2),
+                b.char,
+                b.name || "",
+                cps
+                  .map((c) => c.toString(16).toUpperCase().padStart(4, "0"))
+                  .join("-"),
+                cps.map((c) => c.toString(2)).join(" "),
+                by.map(hex2).join(""),
+                by.map((x) => x.toString(2).padStart(8, "0")).join(""),
+              ]
+                .map(csvEsc)
+                .join(","),
+            );
+          }
+          download("phy_emoji.csv", "\uFEFF" + L.join("\r\n"), "text/csv");
+          updateSeq();
+        };
+        function download(n, c, t) {
+          const a = document.createElement("a");
+          a.href = URL.createObjectURL(new Blob([c], { type: t }));
+          a.download = n;
+          a.click();
+          setTimeout(() => URL.revokeObjectURL(a.href), 500);
+        }
+        function copy(id, btnId) {
+          const text = $(id).textContent.replace(/^[A-Z0-9-]+: /, "");
+          const done = () => {
+            const btn = $(btnId);
+            if (!btn) return;
+            const orig = btn.textContent;
+            btn.textContent = "Copied!";
+            btn.style.background = "#00a651";
+            btn.style.color = "#fff";
+            setTimeout(() => {
+              btn.textContent = orig;
+              btn.style.background = "";
+              btn.style.color = "";
+            }, 1200);
+          };
+          if (navigator.clipboard && window.isSecureContext) {
+            navigator.clipboard.writeText(text).then(done).catch(() => {
+              fallbackCopy(text);
+              done();
+            });
+          } else {
+            fallbackCopy(text);
+            done();
+          }
+        }
+        function fallbackCopy(text) {
+          const ta = document.createElement("textarea");
+          ta.value = text;
+          ta.style.position = "fixed";
+          ta.style.opacity = "0";
+          ta.style.left = "-9999px";
+          document.body.appendChild(ta);
+          ta.select();
+          try { document.execCommand("copy"); } catch (e) {}
+          document.body.removeChild(ta);
+        }
+        $("#copyHex").onclick = () => copy("#seqHex", "#copyHex");
+        $("#copyBin").onclick = () => copy("#seqBin", "#copyBin");
+        $("#copyCp").onclick = () => copy("#seqCp", "#copyCp");
+
+        /* ---------- Projekt speichern/laden ---------- */
+        $("#saveBtn").onclick = () =>
+          download(
+            "phy_emoji_projekt.json",
+            JSON.stringify({ natW, natH, boxes, nextId }, null, 1),
+            "application/json",
+          );
+        $("#loadProj").onchange = (e) => {
+          const f = e.target.files[0];
+          if (!f) return;
+          const r = new FileReader();
+          r.onload = () => {
+            try {
+              const d = JSON.parse(r.result);
+              boxes = d.boxes || [];
+              nextId = d.nextId || boxes.length + 1;
+              selId = null;
+              renderBoxes();
+              renderList();
+              updateSeq();
+              status();
+            } catch (err) {
+              alert("Project Invalid");
+            }
+          };
+          r.readAsText(f);
+        };
+
+        /* ---------- Emoji-Picker (Apple/macOS-Set) ---------- */
+        fetch(EBASE + "emoji.json")
+          .then((r) => r.json())
+          .then((data) => {
+            EMOJIS = data.filter((e) => e.has_img_apple && e.unified);
+            EMOJIS.forEach((e) => byUnified.set(e.unified.toUpperCase(), e));
+            const cats = [...new Set(EMOJIS.map((e) => e.category))].filter(
+              Boolean,
+            );
+            $("#catSel").innerHTML =
+              '<option value="">All Categories</option>' +
+              cats.map((c) => "<option>" + esc(c) + "</option>").join("");
+            renderGrid();
+            status();
+          })
+          .catch(() => {
+            $("#statusLbl").textContent +=
+              " | Emoji list not loaded (offline?) – Direct input still works.";
+          });
+        function uniToChar(u) {
+          return u
+            .split("-")
+            .map((h) => String.fromCodePoint(parseInt(h, 16)))
+            .join("");
+        }
+        let deb = null;
+        $("#pickSearch").oninput = () => {
+          clearTimeout(deb);
+          deb = setTimeout(renderGrid, 150);
+        };
+        $("#catSel").onchange = renderGrid;
+        function renderGrid() {
+          const f = ($("#pickSearch").value || "").trim().toLowerCase(),
+            cat = $("#catSel").value,
+            g = $("#grid");
+          g.innerHTML = "";
+          let list = EMOJIS;
+          if (cat) list = list.filter((e) => e.category === cat);
+          if (f)
+            list = list.filter(
+              (e) =>
+                (e.name || "").toLowerCase().includes(f) ||
+                (e.short_names || []).some((s) => s.includes(f)),
+            );
+          const frag = document.createDocumentFragment();
+          list.slice(0, 800).forEach((e) => {
+            const b = document.createElement("button");
+            b.title = e.name + " [" + e.unified + "]";
+            const im = document.createElement("img");
+            im.loading = "lazy";
+            im.src = EBASE + "img/apple/64/" + e.image;
+            b.appendChild(im);
+            b.onclick = () => assign(uniToChar(e.unified), e.name, e.unified);
+            frag.appendChild(b);
+          });
+          g.appendChild(frag);
+          $("#gridNote").textContent =
+            list.length > 800
+              ? "Showing 800 of " + list.length + " – Narrow your search."
+              : list.length + " Emojis.";
+        }
+        function openPicker() {
+          $("#picker").style.display = "flex";
+          $("#pickInput").value = "";
+          renderCrop();
+          renderGrid();
+          setTimeout(() => $("#pickInput").focus(), 50);
+        }
+        function closePicker() {
+          $("#picker").style.display = "none";
+          pendingRect = null;
+          editingId = null;
+        }
+        $("#closePick").onclick = closePicker;
+        $("#picker").addEventListener("mousedown", (e) => {
+          if (e.target.id === "picker") closePicker();
+        });
+        function renderCrop() {
+          const b =
+            editingId != null ? boxes.find((b) => b.id === editingId) : null;
+          const r =
+            pendingRect || (b ? { x: b.x, y: b.y, w: b.w, h: b.h } : null);
+          const c = $("#crop");
+          if (!r || !imgEl.src) {
+            c.style.display = "none";
+            return;
+          }
+          const z = 3;
+          c.style.display = "block";
+          c.style.width = Math.min(r.w * z, 400) + "px";
+          c.style.height = Math.min(r.h * z, 300) + "px";
+          c.style.backgroundImage = 'url("' + imgEl.src + '")';
+          c.style.backgroundSize = natW * z + "px " + natH * z + "px";
+          c.style.backgroundPosition = -r.x * z + "px " + -r.y * z + "px";
+        }
+        function firstGrapheme(v) {
+          if (window.Intl && Intl.Segmenter) {
+            const it = new Intl.Segmenter("de", { granularity: "grapheme" })
+              .segment(v)
+              [Symbol.iterator]()
+              .next();
+            return it.done ? "" : it.value.segment;
+          }
+          return Array.from(v)[0] || "";
+        }
+        $("#pickInput").addEventListener("input", () => {
+          const v = firstGrapheme($("#pickInput").value.trim());
+          if (!v) return;
+          const uni = cpsOf(v)
+            .map((c) => c.toString(16).toUpperCase().padStart(4, "0"))
+            .join("-");
+          let e =
+            byUnified.get(uni) ||
+            byUnified.get(uni.replace(/-FE0F$/, "")) ||
+            byUnified.get(uni + "-FE0F");
+          assign(v, e ? e.name : "CUSTOM INPUT", e ? e.unified : uni);
+        });
+        function assign(char, name, unified) {
+          if (editingId != null) {
+            const b = boxes.find((b) => b.id === editingId);
+            if (b) {
+              b.char = char;
+              b.name = name;
+              b.unified = unified;
+            }
+          } else if (pendingRect) {
+            boxes.push({
+              id: nextId++,
+              x: pendingRect.x,
+              y: pendingRect.y,
+              w: pendingRect.w,
+              h: pendingRect.h,
+              char,
+              name,
+              unified,
+            });
+          }
+          closePicker();
+          renderBoxes();
+          renderList();
+          updateSeq();
+        }
+        function esc(s) {
+          return String(s).replace(
+            /[&<>"]/g,
+            (c) =>
+              ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c],
+          );
+        }
+        status();
+      })();
+    </script>
+  </body>
+</html>

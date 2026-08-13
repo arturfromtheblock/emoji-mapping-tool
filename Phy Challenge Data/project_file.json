@@ -1,0 +1,2577 @@
+{
+  "natW": 2048,
+  "natH": 2048,
+  "boxes": [
+    {
+      "id": 1,
+      "x": 721,
+      "y": 117,
+      "w": 79,
+      "h": 76,
+      "char": "👏",
+      "name": "CLAPPING HANDS SIGN",
+      "unified": "1F44F"
+    },
+    {
+      "id": 2,
+      "x": 837,
+      "y": 131,
+      "w": 72,
+      "h": 69,
+      "char": "💭",
+      "name": "THOUGHT BALLOON",
+      "unified": "1F4AD"
+    },
+    {
+      "id": 3,
+      "x": 956,
+      "y": 164,
+      "w": 60,
+      "h": 61,
+      "char": "🥴",
+      "name": "FACE WITH UNEVEN EYES AND WAVY MOUTH",
+      "unified": "1F974"
+    },
+    {
+      "id": 4,
+      "x": 1027,
+      "y": 98,
+      "w": 56,
+      "h": 65,
+      "char": "🙎‍♀️",
+      "name": "WOMAN POUTING",
+      "unified": "1F64E-200D-2640-FE0F"
+    },
+    {
+      "id": 5,
+      "x": 1127,
+      "y": 146,
+      "w": 64,
+      "h": 64,
+      "char": "🖤",
+      "name": "BLACK HEART",
+      "unified": "1F5A4"
+    },
+    {
+      "id": 6,
+      "x": 1053,
+      "y": 205,
+      "w": 64,
+      "h": 63,
+      "char": "❤️",
+      "name": "HEAVY BLACK HEART",
+      "unified": "2764-FE0F"
+    },
+    {
+      "id": 7,
+      "x": 1137,
+      "y": 260,
+      "w": 71,
+      "h": 66,
+      "char": "🪙",
+      "name": "COIN",
+      "unified": "1FA99"
+    },
+    {
+      "id": 8,
+      "x": 1215,
+      "y": 209,
+      "w": 71,
+      "h": 65,
+      "char": "🚴",
+      "name": "BICYCLIST",
+      "unified": "1F6B4"
+    },
+    {
+      "id": 9,
+      "x": 1311,
+      "y": 170,
+      "w": 56,
+      "h": 60,
+      "char": "🏃‍♀️",
+      "name": "WOMAN RUNNING",
+      "unified": "1F3C3-200D-2640-FE0F"
+    },
+    {
+      "id": 10,
+      "x": 1296,
+      "y": 279,
+      "w": 68,
+      "h": 66,
+      "char": "🙏",
+      "name": "PERSON WITH FOLDED HANDS",
+      "unified": "1F64F"
+    },
+    {
+      "id": 11,
+      "x": 1392,
+      "y": 246,
+      "w": 51,
+      "h": 67,
+      "char": "👨‍✈️",
+      "name": "MAN PILOT",
+      "unified": "1F468-200D-2708-FE0F"
+    },
+    {
+      "id": 12,
+      "x": 1499,
+      "y": 227,
+      "w": 24,
+      "h": 70,
+      "char": "🧍‍♀️",
+      "name": "WOMAN STANDING",
+      "unified": "1F9CD-200D-2640-FE0F"
+    },
+    {
+      "id": 13,
+      "x": 1460,
+      "y": 334,
+      "w": 48,
+      "h": 68,
+      "char": "🧑🏻‍🩰",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9D1-1F3FB-200D-1FA70"
+    },
+    {
+      "id": 14,
+      "x": 1543,
+      "y": 323,
+      "w": 68,
+      "h": 68,
+      "char": "👨‍🌾",
+      "name": "MAN FARMER",
+      "unified": "1F468-200D-1F33E"
+    },
+    {
+      "id": 15,
+      "x": 1360,
+      "y": 363,
+      "w": 66,
+      "h": 63,
+      "char": "👩🏽‍🦰",
+      "name": "CUSTOM INPUT",
+      "unified": "1F469-1F3FD-200D-1F9B0"
+    },
+    {
+      "id": 16,
+      "x": 1219,
+      "y": 328,
+      "w": 49,
+      "h": 69,
+      "char": "👆🏿",
+      "name": "CUSTOM INPUT",
+      "unified": "1F446-1F3FF"
+    },
+    {
+      "id": 17,
+      "x": 1087,
+      "y": 330,
+      "w": 36,
+      "h": 64,
+      "char": "🚶🏾‍♀️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F6B6-1F3FE-200D-2640-FE0F"
+    },
+    {
+      "id": 18,
+      "x": 987,
+      "y": 277,
+      "w": 70,
+      "h": 64,
+      "char": "👼",
+      "name": "BABY ANGEL",
+      "unified": "1F47C"
+    },
+    {
+      "id": 19,
+      "x": 901,
+      "y": 235,
+      "w": 51,
+      "h": 66,
+      "char": "🦻🏿",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9BB-1F3FF"
+    },
+    {
+      "id": 20,
+      "x": 793,
+      "y": 212,
+      "w": 61,
+      "h": 69,
+      "char": "🧑🏻‍🍳",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9D1-1F3FB-200D-1F373"
+    },
+    {
+      "id": 21,
+      "x": 681,
+      "y": 203,
+      "w": 62,
+      "h": 70,
+      "char": "🙋🏿‍♂️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F64B-1F3FF-200D-2642-FE0F"
+    },
+    {
+      "id": 22,
+      "x": 567,
+      "y": 213,
+      "w": 63,
+      "h": 69,
+      "char": "🧗‍♂️",
+      "name": "MAN CLIMBING",
+      "unified": "1F9D7-200D-2642-FE0F"
+    },
+    {
+      "id": 24,
+      "x": 539,
+      "y": 317,
+      "w": 72,
+      "h": 44,
+      "char": "🏊‍♂️",
+      "name": "MAN SWIMMING",
+      "unified": "1F3CA-200D-2642-FE0F"
+    },
+    {
+      "id": 25,
+      "x": 657,
+      "y": 294,
+      "w": 57,
+      "h": 66,
+      "char": "🧑🏾‍⚖️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9D1-1F3FE-200D-2696-FE0F"
+    },
+    {
+      "id": 26,
+      "x": 755,
+      "y": 298,
+      "w": 65,
+      "h": 66,
+      "char": "😺",
+      "name": "SMILING CAT FACE WITH OPEN MOUTH",
+      "unified": "1F63A"
+    },
+    {
+      "id": 27,
+      "x": 859,
+      "y": 321,
+      "w": 49,
+      "h": 66,
+      "char": "🧑🏾‍💼",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9D1-1F3FE-200D-1F4BC"
+    },
+    {
+      "id": 28,
+      "x": 934,
+      "y": 370,
+      "w": 72,
+      "h": 52,
+      "char": "🏊🏾‍♀️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F3CA-1F3FE-200D-2640-FE0F"
+    },
+    {
+      "id": 29,
+      "x": 1011,
+      "y": 411,
+      "w": 68,
+      "h": 70,
+      "char": "🧩",
+      "name": "JIGSAW PUZZLE PIECE",
+      "unified": "1F9E9"
+    },
+    {
+      "id": 30,
+      "x": 1135,
+      "y": 397,
+      "w": 71,
+      "h": 67,
+      "char": "🚴",
+      "name": "BICYCLIST",
+      "unified": "1F6B4"
+    },
+    {
+      "id": 31,
+      "x": 1272,
+      "y": 411,
+      "w": 64,
+      "h": 61,
+      "char": "😯",
+      "name": "HUSHED FACE",
+      "unified": "1F62F"
+    },
+    {
+      "id": 32,
+      "x": 1406,
+      "y": 449,
+      "w": 59,
+      "h": 68,
+      "char": "🙋‍♀️",
+      "name": "WOMAN RAISING HAND",
+      "unified": "1F64B-200D-2640-FE0F"
+    },
+    {
+      "id": 33,
+      "x": 1508,
+      "y": 430,
+      "w": 56,
+      "h": 64,
+      "char": "🧑🏻‍🔧",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9D1-1F3FB-200D-1F527"
+    },
+    {
+      "id": 34,
+      "x": 1600,
+      "y": 424,
+      "w": 51,
+      "h": 68,
+      "char": "🔓",
+      "name": "OPEN LOCK",
+      "unified": "1F513"
+    },
+    {
+      "id": 35,
+      "x": 1696,
+      "y": 438,
+      "w": 49,
+      "h": 65,
+      "char": "🤵",
+      "name": "MAN IN TUXEDO",
+      "unified": "1F935"
+    },
+    {
+      "id": 36,
+      "x": 1715,
+      "y": 544,
+      "w": 69,
+      "h": 69,
+      "char": "😈",
+      "name": "SMILING FACE WITH HORNS",
+      "unified": "1F608"
+    },
+    {
+      "id": 37,
+      "x": 1647,
+      "y": 530,
+      "w": 21,
+      "h": 62,
+      "char": "🕴🏿",
+      "name": "CUSTOM INPUT",
+      "unified": "1F574-1F3FF"
+    },
+    {
+      "id": 38,
+      "x": 1538,
+      "y": 526,
+      "w": 50,
+      "h": 65,
+      "char": "🤱",
+      "name": "BREAST-FEEDING",
+      "unified": "1F931"
+    },
+    {
+      "id": 39,
+      "x": 1431,
+      "y": 544,
+      "w": 64,
+      "h": 63,
+      "char": "😲",
+      "name": "ASTONISHED FACE",
+      "unified": "1F632"
+    },
+    {
+      "id": 40,
+      "x": 1317,
+      "y": 495,
+      "w": 52,
+      "h": 64,
+      "char": "🧞",
+      "name": "GENIE",
+      "unified": "1F9DE"
+    },
+    {
+      "id": 41,
+      "x": 1193,
+      "y": 475,
+      "w": 58,
+      "h": 65,
+      "char": "👴",
+      "name": "OLDER MAN",
+      "unified": "1F474"
+    },
+    {
+      "id": 42,
+      "x": 1072,
+      "y": 485,
+      "w": 69,
+      "h": 68,
+      "char": "💇",
+      "name": "HAIRCUT",
+      "unified": "1F487"
+    },
+    {
+      "id": 43,
+      "x": 971,
+      "y": 525,
+      "w": 62,
+      "h": 65,
+      "char": "👱‍♀️",
+      "name": "WOMAN: BLOND HAIR",
+      "unified": "1F471-200D-2640-FE0F"
+    },
+    {
+      "id": 44,
+      "x": 905,
+      "y": 460,
+      "w": 64,
+      "h": 67,
+      "char": "🧖🏻",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9D6-1F3FB"
+    },
+    {
+      "id": 45,
+      "x": 840,
+      "y": 418,
+      "w": 27,
+      "h": 66,
+      "char": "🧍",
+      "name": "STANDING PERSON",
+      "unified": "1F9CD"
+    },
+    {
+      "id": 46,
+      "x": 742,
+      "y": 399,
+      "w": 40,
+      "h": 58,
+      "char": "🧑🏻‍🦽‍➡️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9D1-1F3FB-200D-1F9BD-200D-27A1-FE0F"
+    },
+    {
+      "id": 47,
+      "x": 631,
+      "y": 394,
+      "w": 68,
+      "h": 54,
+      "char": "🫲",
+      "name": "LEFTWARDS HAND",
+      "unified": "1FAF2"
+    },
+    {
+      "id": 48,
+      "x": 530,
+      "y": 397,
+      "w": 68,
+      "h": 69,
+      "char": "👩🏻‍🌾",
+      "name": "CUSTOM INPUT",
+      "unified": "1F469-1F3FB-200D-1F33E"
+    },
+    {
+      "id": 49,
+      "x": 439,
+      "y": 335,
+      "w": 61,
+      "h": 68,
+      "char": "🧛🏻‍♂️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9DB-1F3FB-200D-2642-FE0F"
+    },
+    {
+      "id": 50,
+      "x": 333,
+      "y": 384,
+      "w": 65,
+      "h": 63,
+      "char": "🤨",
+      "name": "FACE WITH ONE EYEBROW RAISED",
+      "unified": "1F928"
+    },
+    {
+      "id": 51,
+      "x": 431,
+      "y": 430,
+      "w": 68,
+      "h": 68,
+      "char": "☠️",
+      "name": "SKULL AND CROSSBONES",
+      "unified": "2620-FE0F"
+    },
+    {
+      "id": 52,
+      "x": 331,
+      "y": 478,
+      "w": 69,
+      "h": 68,
+      "char": "🧟‍♀️",
+      "name": "WOMAN ZOMBIE",
+      "unified": "1F9DF-200D-2640-FE0F"
+    },
+    {
+      "id": 53,
+      "x": 242,
+      "y": 555,
+      "w": 68,
+      "h": 51,
+      "char": "🤝",
+      "name": "HANDSHAKE",
+      "unified": "1F91D"
+    },
+    {
+      "id": 54,
+      "x": 363,
+      "y": 571,
+      "w": 47,
+      "h": 67,
+      "char": "👷🏿‍♀️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F477-1F3FF-200D-2640-FE0F"
+    },
+    {
+      "id": 55,
+      "x": 449,
+      "y": 522,
+      "w": 56,
+      "h": 70,
+      "char": "🧑🏾‍🦳",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9D1-1F3FE-200D-1F9B3"
+    },
+    {
+      "id": 56,
+      "x": 555,
+      "y": 512,
+      "w": 36,
+      "h": 48,
+      "char": "🧎🏻",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9CE-1F3FB"
+    },
+    {
+      "id": 57,
+      "x": 636,
+      "y": 486,
+      "w": 62,
+      "h": 68,
+      "char": "💆‍♀️",
+      "name": "WOMAN GETTING MASSAGE",
+      "unified": "1F486-200D-2640-FE0F"
+    },
+    {
+      "id": 58,
+      "x": 735,
+      "y": 497,
+      "w": 51,
+      "h": 68,
+      "char": "👮🏾‍♀️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F46E-1F3FE-200D-2640-FE0F"
+    },
+    {
+      "id": 59,
+      "x": 474,
+      "y": 633,
+      "w": 69,
+      "h": 49,
+      "char": "🤜",
+      "name": "RIGHT-FACING FIST",
+      "unified": "1F91C"
+    },
+    {
+      "id": 60,
+      "x": 576,
+      "y": 594,
+      "w": 51,
+      "h": 68,
+      "char": "🤱",
+      "name": "BREAST-FEEDING",
+      "unified": "1F931"
+    },
+    {
+      "id": 61,
+      "x": 657,
+      "y": 608,
+      "w": 69,
+      "h": 40,
+      "char": "🚣",
+      "name": "ROWBOAT",
+      "unified": "1F6A3"
+    },
+    {
+      "id": 62,
+      "x": 759,
+      "y": 616,
+      "w": 45,
+      "h": 67,
+      "char": "🤘",
+      "name": "SIGN OF THE HORNS",
+      "unified": "1F918"
+    },
+    {
+      "id": 63,
+      "x": 812,
+      "y": 531,
+      "w": 67,
+      "h": 68,
+      "char": "👨‍🏫",
+      "name": "MAN TEACHER",
+      "unified": "1F468-200D-1F3EB"
+    },
+    {
+      "id": 64,
+      "x": 894,
+      "y": 589,
+      "w": 58,
+      "h": 65,
+      "char": "🧝‍♂️",
+      "name": "MAN ELF",
+      "unified": "1F9DD-200D-2642-FE0F"
+    },
+    {
+      "id": 65,
+      "x": 1039,
+      "y": 614,
+      "w": 30,
+      "h": 59,
+      "char": "❓",
+      "name": "BLACK QUESTION MARK ORNAMENT",
+      "unified": "2753"
+    },
+    {
+      "id": 66,
+      "x": 1112,
+      "y": 568,
+      "w": 65,
+      "h": 72,
+      "char": "👯‍♂️",
+      "name": "MEN WITH BUNNY EARS",
+      "unified": "1F46F-200D-2642-FE0F"
+    },
+    {
+      "id": 67,
+      "x": 1221,
+      "y": 562,
+      "w": 64,
+      "h": 64,
+      "char": "😙",
+      "name": "KISSING FACE WITH SMILING EYES",
+      "unified": "1F619"
+    },
+    {
+      "id": 68,
+      "x": 1329,
+      "y": 581,
+      "w": 70,
+      "h": 70,
+      "char": "👨‍🌾",
+      "name": "MAN FARMER",
+      "unified": "1F468-200D-1F33E"
+    },
+    {
+      "id": 69,
+      "x": 1438,
+      "y": 636,
+      "w": 59,
+      "h": 66,
+      "char": "👱‍♂️",
+      "name": "MAN: BLOND HAIR",
+      "unified": "1F471-200D-2642-FE0F"
+    },
+    {
+      "id": 70,
+      "x": 1542,
+      "y": 621,
+      "w": 63,
+      "h": 70,
+      "char": "🏋",
+      "name": "PERSON LIFTING WEIGHTS",
+      "unified": "1F3CB-FE0F"
+    },
+    {
+      "id": 71,
+      "x": 1651,
+      "y": 632,
+      "w": 40,
+      "h": 67,
+      "char": "💂‍♀️",
+      "name": "WOMAN GUARD",
+      "unified": "1F482-200D-2640-FE0F"
+    },
+    {
+      "id": 72,
+      "x": 1730,
+      "y": 657,
+      "w": 60,
+      "h": 67,
+      "char": "🧙‍♀️",
+      "name": "WOMAN MAGE",
+      "unified": "1F9D9-200D-2640-FE0F"
+    },
+    {
+      "id": 73,
+      "x": 390,
+      "y": 660,
+      "w": 59,
+      "h": 68,
+      "char": "🧙‍♂️",
+      "name": "MAN MAGE",
+      "unified": "1F9D9-200D-2642-FE0F"
+    },
+    {
+      "id": 74,
+      "x": 266,
+      "y": 651,
+      "w": 70,
+      "h": 46,
+      "char": "🏊",
+      "name": "SWIMMER",
+      "unified": "1F3CA"
+    },
+    {
+      "id": 75,
+      "x": 192,
+      "y": 713,
+      "w": 66,
+      "h": 66,
+      "char": "😹",
+      "name": "CAT FACE WITH TEARS OF JOY",
+      "unified": "1F639"
+    },
+    {
+      "id": 76,
+      "x": 317,
+      "y": 721,
+      "w": 60,
+      "h": 67,
+      "char": "👨‍🎤",
+      "name": "MAN SINGER",
+      "unified": "1F468-200D-1F3A4"
+    },
+    {
+      "id": 77,
+      "x": 447,
+      "y": 746,
+      "w": 61,
+      "h": 66,
+      "char": "🧒",
+      "name": "CHILD",
+      "unified": "1F9D2"
+    },
+    {
+      "id": 78,
+      "x": 529,
+      "y": 729,
+      "w": 69,
+      "h": 35,
+      "char": "🫳",
+      "name": "PALM DOWN HAND",
+      "unified": "1FAF3"
+    },
+    {
+      "id": 79,
+      "x": 626,
+      "y": 699,
+      "w": 62,
+      "h": 67,
+      "char": "👩‍🦯‍➡️",
+      "name": "WOMAN WITH WHITE CANE FACING RIGHT",
+      "unified": "1F469-200D-1F9AF-200D-27A1-FE0F"
+    },
+    {
+      "id": 80,
+      "x": 729,
+      "y": 715,
+      "w": 50,
+      "h": 65,
+      "char": "🧑‍⚕️",
+      "name": "HEALTH WORKER",
+      "unified": "1F9D1-200D-2695-FE0F"
+    },
+    {
+      "id": 81,
+      "x": 853,
+      "y": 674,
+      "w": 42,
+      "h": 65,
+      "char": "🚶‍♂️",
+      "name": "MAN WALKING",
+      "unified": "1F6B6-200D-2642-FE0F"
+    },
+    {
+      "id": 82,
+      "x": 958,
+      "y": 684,
+      "w": 60,
+      "h": 65,
+      "char": "🧛",
+      "name": "VAMPIRE",
+      "unified": "1F9DB"
+    },
+    {
+      "id": 83,
+      "x": 1042,
+      "y": 733,
+      "w": 69,
+      "h": 68,
+      "char": "👵",
+      "name": "OLDER WOMAN",
+      "unified": "1F475"
+    },
+    {
+      "id": 84,
+      "x": 1139,
+      "y": 673,
+      "w": 38,
+      "h": 67,
+      "char": "🖕",
+      "name": "REVERSED HAND WITH MIDDLE FINGER EXTENDED",
+      "unified": "1F595"
+    },
+    {
+      "id": 85,
+      "x": 1227,
+      "y": 659,
+      "w": 58,
+      "h": 66,
+      "char": "✊",
+      "name": "RAISED FIST",
+      "unified": "270A"
+    },
+    {
+      "id": 86,
+      "x": 1322,
+      "y": 676,
+      "w": 68,
+      "h": 68,
+      "char": "🤦🏿",
+      "name": "CUSTOM INPUT",
+      "unified": "1F926-1F3FF"
+    },
+    {
+      "id": 87,
+      "x": 1424,
+      "y": 726,
+      "w": 64,
+      "h": 69,
+      "char": "🖖🏿",
+      "name": "CUSTOM INPUT",
+      "unified": "1F596-1F3FF"
+    },
+    {
+      "id": 88,
+      "x": 1537,
+      "y": 718,
+      "w": 56,
+      "h": 65,
+      "char": "👳",
+      "name": "MAN WITH TURBAN",
+      "unified": "1F473"
+    },
+    {
+      "id": 89,
+      "x": 1638,
+      "y": 729,
+      "w": 54,
+      "h": 64,
+      "char": "👳‍♀️",
+      "name": "WOMAN WEARING TURBAN",
+      "unified": "1F473-200D-2640-FE0F"
+    },
+    {
+      "id": 90,
+      "x": 1722,
+      "y": 779,
+      "w": 69,
+      "h": 34,
+      "char": "🫴🏿",
+      "name": "CUSTOM INPUT",
+      "unified": "1FAF4-1F3FF"
+    },
+    {
+      "id": 91,
+      "x": 1817,
+      "y": 700,
+      "w": 62,
+      "h": 63,
+      "char": "🙊",
+      "name": "SPEAK-NO-EVIL MONKEY",
+      "unified": "1F64A"
+    },
+    {
+      "id": 92,
+      "x": 1814,
+      "y": 807,
+      "w": 51,
+      "h": 69,
+      "char": "👩🏿‍✈️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F469-1F3FF-200D-2708-FE0F"
+    },
+    {
+      "id": 93,
+      "x": 1880,
+      "y": 869,
+      "w": 63,
+      "h": 62,
+      "char": "🧝🏻‍♀️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9DD-1F3FB-200D-2640-FE0F"
+    },
+    {
+      "id": 94,
+      "x": 1780,
+      "y": 912,
+      "w": 67,
+      "h": 69,
+      "char": "💗",
+      "name": "GROWING HEART",
+      "unified": "1F497"
+    },
+    {
+      "id": 95,
+      "x": 1701,
+      "y": 864,
+      "w": 65,
+      "h": 63,
+      "char": "🙂",
+      "name": "SLIGHTLY SMILING FACE",
+      "unified": "1F642"
+    },
+    {
+      "id": 96,
+      "x": 1610,
+      "y": 823,
+      "w": 65,
+      "h": 69,
+      "char": "🤮",
+      "name": "FACE WITH OPEN MOUTH VOMITING",
+      "unified": "1F92E"
+    },
+    {
+      "id": 97,
+      "x": 1501,
+      "y": 821,
+      "w": 70,
+      "h": 41,
+      "char": "🚣",
+      "name": "ROWBOAT",
+      "unified": "1F6A3"
+    },
+    {
+      "id": 98,
+      "x": 1380,
+      "y": 816,
+      "w": 63,
+      "h": 63,
+      "char": "😉",
+      "name": "WINKING FACE",
+      "unified": "1F609"
+    },
+    {
+      "id": 99,
+      "x": 1286,
+      "y": 772,
+      "w": 71,
+      "h": 68,
+      "char": "🧑🏿‍🏫",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9D1-1F3FF-200D-1F3EB"
+    },
+    {
+      "id": 100,
+      "x": 1194,
+      "y": 766,
+      "w": 58,
+      "h": 67,
+      "char": "👱🏿",
+      "name": "CUSTOM INPUT",
+      "unified": "1F471-1F3FF"
+    },
+    {
+      "id": 101,
+      "x": 1091,
+      "y": 819,
+      "w": 63,
+      "h": 71,
+      "char": "🙋🏿‍♂️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F64B-1F3FF-200D-2642-FE0F"
+    },
+    {
+      "id": 102,
+      "x": 919,
+      "y": 784,
+      "w": 68,
+      "h": 67,
+      "char": "🏋🏿‍♀️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F3CB-1F3FF-200D-2640-FE0F"
+    },
+    {
+      "id": 103,
+      "x": 830,
+      "y": 773,
+      "w": 62,
+      "h": 67,
+      "char": "👩‍⚖️",
+      "name": "WOMAN JUDGE",
+      "unified": "1F469-200D-2696-FE0F"
+    },
+    {
+      "id": 104,
+      "x": 733,
+      "y": 812,
+      "w": 53,
+      "h": 67,
+      "char": "🙎🏾",
+      "name": "CUSTOM INPUT",
+      "unified": "1F64E-1F3FE"
+    },
+    {
+      "id": 105,
+      "x": 615,
+      "y": 802,
+      "w": 70,
+      "h": 63,
+      "char": "🫵",
+      "name": "INDEX POINTING AT THE VIEWER",
+      "unified": "1FAF5"
+    },
+    {
+      "id": 106,
+      "x": 529,
+      "y": 828,
+      "w": 58,
+      "h": 64,
+      "char": "👩‍🔬",
+      "name": "WOMAN SCIENTIST",
+      "unified": "1F469-200D-1F52C"
+    },
+    {
+      "id": 107,
+      "x": 446,
+      "y": 872,
+      "w": 56,
+      "h": 65,
+      "char": "🏃",
+      "name": "RUNNER",
+      "unified": "1F3C3"
+    },
+    {
+      "id": 108,
+      "x": 363,
+      "y": 806,
+      "w": 72,
+      "h": 56,
+      "char": "🤲",
+      "name": "PALMS UP TOGETHER",
+      "unified": "1F932"
+    },
+    {
+      "id": 109,
+      "x": 240,
+      "y": 797,
+      "w": 58,
+      "h": 68,
+      "char": "🧑🏻‍🦱",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9D1-1F3FB-200D-1F9B1"
+    },
+    {
+      "id": 110,
+      "x": 125,
+      "y": 807,
+      "w": 68,
+      "h": 69,
+      "char": "👯‍♀️",
+      "name": "WOMEN WITH BUNNY EARS",
+      "unified": "1F46F-200D-2640-FE0F"
+    },
+    {
+      "id": 111,
+      "x": 183,
+      "y": 888,
+      "w": 65,
+      "h": 67,
+      "char": "👨‍🎤",
+      "name": "MAN SINGER",
+      "unified": "1F468-200D-1F3A4"
+    },
+    {
+      "id": 112,
+      "x": 297,
+      "y": 887,
+      "w": 69,
+      "h": 47,
+      "char": "🤏",
+      "name": "PINCHING HAND",
+      "unified": "1F90F"
+    },
+    {
+      "id": 113,
+      "x": 384,
+      "y": 937,
+      "w": 50,
+      "h": 65,
+      "char": "👨‍🍼",
+      "name": "MAN FEEDING BABY",
+      "unified": "1F468-200D-1F37C"
+    },
+    {
+      "id": 114,
+      "x": 999,
+      "y": 881,
+      "w": 51,
+      "h": 64,
+      "char": "👃",
+      "name": "NOSE",
+      "unified": "1F443"
+    },
+    {
+      "id": 115,
+      "x": 1209,
+      "y": 870,
+      "w": 56,
+      "h": 66,
+      "char": "🧑‍🦲",
+      "name": "PERSON: BALD",
+      "unified": "1F9D1-200D-1F9B2"
+    },
+    {
+      "id": 116,
+      "x": 260,
+      "y": 956,
+      "w": 35,
+      "h": 68,
+      "char": "🦵",
+      "name": "LEG",
+      "unified": "1F9B5"
+    },
+    {
+      "id": 117,
+      "x": 331,
+      "y": 1011,
+      "w": 50,
+      "h": 72,
+      "char": "🏌️‍♂️",
+      "name": "MAN GOLFING",
+      "unified": "1F3CC-FE0F-200D-2642-FE0F"
+    },
+    {
+      "id": 118,
+      "x": 134,
+      "y": 988,
+      "w": 68,
+      "h": 70,
+      "char": "🦸‍♂️",
+      "name": "MAN SUPERHERO",
+      "unified": "1F9B8-200D-2642-FE0F"
+    },
+    {
+      "id": 119,
+      "x": 204,
+      "y": 1053,
+      "w": 67,
+      "h": 66,
+      "char": "🤙",
+      "name": "CALL ME HAND",
+      "unified": "1F919"
+    },
+    {
+      "id": 120,
+      "x": 101,
+      "y": 1102,
+      "w": 68,
+      "h": 67,
+      "char": "🥷",
+      "name": "NINJA",
+      "unified": "1F977"
+    },
+    {
+      "id": 121,
+      "x": 175,
+      "y": 1167,
+      "w": 68,
+      "h": 55,
+      "char": "🫱🏿",
+      "name": "CUSTOM INPUT",
+      "unified": "1FAF1-1F3FF"
+    },
+    {
+      "id": 122,
+      "x": 289,
+      "y": 1109,
+      "w": 55,
+      "h": 62,
+      "char": "👩🏿‍🦼",
+      "name": "CUSTOM INPUT",
+      "unified": "1F469-1F3FF-200D-1F9BC"
+    },
+    {
+      "id": 123,
+      "x": 377,
+      "y": 1142,
+      "w": 64,
+      "h": 67,
+      "char": "💃",
+      "name": "DANCER",
+      "unified": "1F483"
+    },
+    {
+      "id": 124,
+      "x": 422,
+      "y": 1057,
+      "w": 52,
+      "h": 68,
+      "char": "👷🏿",
+      "name": "CUSTOM INPUT",
+      "unified": "1F477-1F3FF"
+    },
+    {
+      "id": 125,
+      "x": 472,
+      "y": 985,
+      "w": 65,
+      "h": 68,
+      "char": "🧜‍♀️",
+      "name": "MERMAID",
+      "unified": "1F9DC-200D-2640-FE0F"
+    },
+    {
+      "id": 126,
+      "x": 549,
+      "y": 928,
+      "w": 66,
+      "h": 70,
+      "char": "🙅🏿",
+      "name": "CUSTOM INPUT",
+      "unified": "1F645-1F3FF"
+    },
+    {
+      "id": 127,
+      "x": 526,
+      "y": 1081,
+      "w": 66,
+      "h": 70,
+      "char": "🏋",
+      "name": "PERSON LIFTING WEIGHTS",
+      "unified": "1F3CB-FE0F"
+    },
+    {
+      "id": 128,
+      "x": 608,
+      "y": 1018,
+      "w": 61,
+      "h": 68,
+      "char": "🧑‍🚒",
+      "name": "FIREFIGHTER",
+      "unified": "1F9D1-200D-1F692"
+    },
+    {
+      "id": 129,
+      "x": 482,
+      "y": 1162,
+      "w": 56,
+      "h": 67,
+      "char": "🧑🏿‍🎓",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9D1-1F3FF-200D-1F393"
+    },
+    {
+      "id": 130,
+      "x": 352,
+      "y": 1238,
+      "w": 64,
+      "h": 64,
+      "char": "😧",
+      "name": "ANGUISHED FACE",
+      "unified": "1F627"
+    },
+    {
+      "id": 131,
+      "x": 260,
+      "y": 1205,
+      "w": 62,
+      "h": 65,
+      "char": "🤟",
+      "name": "I LOVE YOU HAND SIGN",
+      "unified": "1F91F"
+    },
+    {
+      "id": 132,
+      "x": 170,
+      "y": 1273,
+      "w": 64,
+      "h": 65,
+      "char": "🥹",
+      "name": "FACE HOLDING BACK TEARS",
+      "unified": "1F979"
+    },
+    {
+      "id": 133,
+      "x": 249,
+      "y": 1311,
+      "w": 50,
+      "h": 67,
+      "char": "🫷🏿",
+      "name": "CUSTOM INPUT",
+      "unified": "1FAF7-1F3FF"
+    },
+    {
+      "id": 134,
+      "x": 350,
+      "y": 1339,
+      "w": 59,
+      "h": 65,
+      "char": "🏃🏿‍♂️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F3C3-1F3FF-200D-2642-FE0F"
+    },
+    {
+      "id": 135,
+      "x": 268,
+      "y": 1425,
+      "w": 62,
+      "h": 62,
+      "char": "😔",
+      "name": "PENSIVE FACE",
+      "unified": "1F614"
+    },
+    {
+      "id": 136,
+      "x": 361,
+      "y": 1439,
+      "w": 64,
+      "h": 70,
+      "char": "👦🏿",
+      "name": "CUSTOM INPUT",
+      "unified": "1F466-1F3FF"
+    },
+    {
+      "id": 137,
+      "x": 440,
+      "y": 1346,
+      "w": 69,
+      "h": 67,
+      "char": "🦹🏾‍♂️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9B9-1F3FE-200D-2642-FE0F"
+    },
+    {
+      "id": 138,
+      "x": 469,
+      "y": 1443,
+      "w": 35,
+      "h": 68,
+      "char": "🚶‍♂️",
+      "name": "MAN WALKING",
+      "unified": "1F6B6-200D-2642-FE0F"
+    },
+    {
+      "id": 139,
+      "x": 453,
+      "y": 1250,
+      "w": 60,
+      "h": 67,
+      "char": "👰🏾‍♂️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F470-1F3FE-200D-2642-FE0F"
+    },
+    {
+      "id": 140,
+      "x": 313,
+      "y": 1534,
+      "w": 36,
+      "h": 67,
+      "char": "🚶🏿",
+      "name": "CUSTOM INPUT",
+      "unified": "1F6B6-1F3FF"
+    },
+    {
+      "id": 141,
+      "x": 387,
+      "y": 1543,
+      "w": 71,
+      "h": 67,
+      "char": "🦹🏾‍♂️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9B9-1F3FE-200D-2642-FE0F"
+    },
+    {
+      "id": 142,
+      "x": 492,
+      "y": 1543,
+      "w": 53,
+      "h": 64,
+      "char": "🙍‍♀️",
+      "name": "WOMAN FROWNING",
+      "unified": "1F64D-200D-2640-FE0F"
+    },
+    {
+      "id": 143,
+      "x": 440,
+      "y": 1646,
+      "w": 63,
+      "h": 64,
+      "char": "🫪",
+      "name": "CUSTOM INPUT",
+      "unified": "1FAEA"
+    },
+    {
+      "id": 144,
+      "x": 537,
+      "y": 1636,
+      "w": 53,
+      "h": 64,
+      "char": "🧑🏻‍🦼‍➡️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9D1-1F3FB-200D-1F9BC-200D-27A1-FE0F"
+    },
+    {
+      "id": 145,
+      "x": 503,
+      "y": 1755,
+      "w": 71,
+      "h": 48,
+      "char": "🤛",
+      "name": "LEFT-FACING FIST",
+      "unified": "1F91B"
+    },
+    {
+      "id": 146,
+      "x": 598,
+      "y": 1724,
+      "w": 63,
+      "h": 63,
+      "char": "😠",
+      "name": "ANGRY FACE",
+      "unified": "1F620"
+    },
+    {
+      "id": 147,
+      "x": 681,
+      "y": 1802,
+      "w": 62,
+      "h": 69,
+      "char": "👨‍🍳",
+      "name": "MAN COOK",
+      "unified": "1F468-200D-1F373"
+    },
+    {
+      "id": 148,
+      "x": 692,
+      "y": 1688,
+      "w": 54,
+      "h": 69,
+      "char": "🧞‍♂️",
+      "name": "MAN GENIE",
+      "unified": "1F9DE-200D-2642-FE0F"
+    },
+    {
+      "id": 149,
+      "x": 771,
+      "y": 1639,
+      "w": 65,
+      "h": 70,
+      "char": "💪",
+      "name": "FLEXED BICEPS",
+      "unified": "1F4AA"
+    },
+    {
+      "id": 150,
+      "x": 637,
+      "y": 1608,
+      "w": 43,
+      "h": 63,
+      "char": "👂🏿",
+      "name": "CUSTOM INPUT",
+      "unified": "1F442-1F3FF"
+    },
+    {
+      "id": 151,
+      "x": 594,
+      "y": 1534,
+      "w": 34,
+      "h": 48,
+      "char": "🧎‍♀️",
+      "name": "WOMAN KNEELING",
+      "unified": "1F9CE-200D-2640-FE0F"
+    },
+    {
+      "id": 152,
+      "x": 562,
+      "y": 1423,
+      "w": 44,
+      "h": 70,
+      "char": "🤞🏿",
+      "name": "CUSTOM INPUT",
+      "unified": "1F91E-1F3FF"
+    },
+    {
+      "id": 153,
+      "x": 558,
+      "y": 1337,
+      "w": 40,
+      "h": 60,
+      "char": "👩🏻‍🦽‍➡️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F469-1F3FB-200D-1F9BD-200D-27A1-FE0F"
+    },
+    {
+      "id": 154,
+      "x": 561,
+      "y": 1241,
+      "w": 67,
+      "h": 67,
+      "char": "👨🏻‍🎨",
+      "name": "CUSTOM INPUT",
+      "unified": "1F468-1F3FB-200D-1F3A8"
+    },
+    {
+      "id": 155,
+      "x": 603,
+      "y": 1159,
+      "w": 67,
+      "h": 61,
+      "char": "🤷🏻",
+      "name": "CUSTOM INPUT",
+      "unified": "1F937-1F3FB"
+    },
+    {
+      "id": 156,
+      "x": 677,
+      "y": 1075,
+      "w": 69,
+      "h": 70,
+      "char": "💤",
+      "name": "SLEEPING SYMBOL",
+      "unified": "1F4A4"
+    },
+    {
+      "id": 157,
+      "x": 708,
+      "y": 971,
+      "w": 69,
+      "h": 69,
+      "char": "👋",
+      "name": "WAVING HAND SIGN",
+      "unified": "1F44B"
+    },
+    {
+      "id": 158,
+      "x": 654,
+      "y": 899,
+      "w": 52,
+      "h": 64,
+      "char": "🙍‍♂️",
+      "name": "MAN FROWNING",
+      "unified": "1F64D-200D-2642-FE0F"
+    },
+    {
+      "id": 159,
+      "x": 779,
+      "y": 900,
+      "w": 68,
+      "h": 69,
+      "char": "🚵",
+      "name": "MOUNTAIN BICYCLIST",
+      "unified": "1F6B5"
+    },
+    {
+      "id": 160,
+      "x": 882,
+      "y": 890,
+      "w": 66,
+      "h": 69,
+      "char": "🙅‍♀️",
+      "name": "WOMAN GESTURING NO",
+      "unified": "1F645-200D-2640-FE0F"
+    },
+    {
+      "id": 161,
+      "x": 822,
+      "y": 1010,
+      "w": 71,
+      "h": 71,
+      "char": "🙆🏻‍♂️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F646-1F3FB-200D-2642-FE0F"
+    },
+    {
+      "id": 162,
+      "x": 794,
+      "y": 1102,
+      "w": 34,
+      "h": 63,
+      "char": "🚶🏾‍♀️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F6B6-1F3FE-200D-2640-FE0F"
+    },
+    {
+      "id": 163,
+      "x": 698,
+      "y": 1197,
+      "w": 62,
+      "h": 68,
+      "char": "🧏🏾‍♂️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9CF-1F3FE-200D-2642-FE0F"
+    },
+    {
+      "id": 164,
+      "x": 805,
+      "y": 1201,
+      "w": 37,
+      "h": 66,
+      "char": "🦶🏾",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9B6-1F3FE"
+    },
+    {
+      "id": 165,
+      "x": 891,
+      "y": 1149,
+      "w": 68,
+      "h": 68,
+      "char": "🙆🏾‍♀️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F646-1F3FE-200D-2640-FE0F"
+    },
+    {
+      "id": 166,
+      "x": 999,
+      "y": 1089,
+      "w": 59,
+      "h": 67,
+      "char": "👨‍⚖️",
+      "name": "MAN JUDGE",
+      "unified": "1F468-200D-2696-FE0F"
+    },
+    {
+      "id": 167,
+      "x": 1109,
+      "y": 1075,
+      "w": 58,
+      "h": 69,
+      "char": "🧑‍🚒",
+      "name": "FIREFIGHTER",
+      "unified": "1F9D1-200D-1F692"
+    },
+    {
+      "id": 168,
+      "x": 1058,
+      "y": 1181,
+      "w": 64,
+      "h": 70,
+      "char": "👯",
+      "name": "WOMAN WITH BUNNY EARS",
+      "unified": "1F46F"
+    },
+    {
+      "id": 169,
+      "x": 942,
+      "y": 1241,
+      "w": 57,
+      "h": 61,
+      "char": "👸🏻",
+      "name": "CUSTOM INPUT",
+      "unified": "1F478-1F3FB"
+    },
+    {
+      "id": 170,
+      "x": 857,
+      "y": 1291,
+      "w": 63,
+      "h": 68,
+      "char": "⛹🏻‍♀️",
+      "name": "CUSTOM INPUT",
+      "unified": "26F9-1F3FB-200D-2640-FE0F"
+    },
+    {
+      "id": 171,
+      "x": 773,
+      "y": 1314,
+      "w": 40,
+      "h": 60,
+      "char": "🧑🏿‍🦽",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9D1-1F3FF-200D-1F9BD"
+    },
+    {
+      "id": 172,
+      "x": 674,
+      "y": 1293,
+      "w": 34,
+      "h": 64,
+      "char": "🚶🏿",
+      "name": "CUSTOM INPUT",
+      "unified": "1F6B6-1F3FF"
+    },
+    {
+      "id": 173,
+      "x": 665,
+      "y": 1385,
+      "w": 41,
+      "h": 67,
+      "char": "🫃🏻",
+      "name": "CUSTOM INPUT",
+      "unified": "1FAC3-1F3FB"
+    },
+    {
+      "id": 174,
+      "x": 767,
+      "y": 1408,
+      "w": 62,
+      "h": 67,
+      "char": "👨‍🚀",
+      "name": "MAN ASTRONAUT",
+      "unified": "1F468-200D-1F680"
+    },
+    {
+      "id": 175,
+      "x": 873,
+      "y": 1398,
+      "w": 64,
+      "h": 67,
+      "char": "🕵🏿‍♀️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F575-1F3FF-200D-2640-FE0F"
+    },
+    {
+      "id": 176,
+      "x": 801,
+      "y": 1493,
+      "w": 52,
+      "h": 70,
+      "char": "🧞‍♀️",
+      "name": "WOMAN GENIE",
+      "unified": "1F9DE-200D-2640-FE0F"
+    },
+    {
+      "id": 177,
+      "x": 674,
+      "y": 1475,
+      "w": 62,
+      "h": 69,
+      "char": "🤳",
+      "name": "SELFIE",
+      "unified": "1F933"
+    },
+    {
+      "id": 178,
+      "x": 711,
+      "y": 1562,
+      "w": 67,
+      "h": 64,
+      "char": "👿",
+      "name": "IMP",
+      "unified": "1F47F"
+    },
+    {
+      "id": 179,
+      "x": 768,
+      "y": 1762,
+      "w": 62,
+      "h": 69,
+      "char": "🖐",
+      "name": "HAND WITH FINGERS SPLAYED",
+      "unified": "1F590-FE0F"
+    },
+    {
+      "id": 180,
+      "x": 858,
+      "y": 1709,
+      "w": 45,
+      "h": 69,
+      "char": "🏌🏿‍♀️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F3CC-1F3FF-200D-2640-FE0F"
+    },
+    {
+      "id": 181,
+      "x": 872,
+      "y": 1841,
+      "w": 35,
+      "h": 48,
+      "char": "🧎🏻",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9CE-1F3FB"
+    },
+    {
+      "id": 182,
+      "x": 933,
+      "y": 1765,
+      "w": 63,
+      "h": 67,
+      "char": "🧏🏾‍♂️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9CF-1F3FE-200D-2642-FE0F"
+    },
+    {
+      "id": 183,
+      "x": 969,
+      "y": 1881,
+      "w": 50,
+      "h": 57,
+      "char": "🫅🏿",
+      "name": "CUSTOM INPUT",
+      "unified": "1FAC5-1F3FF"
+    },
+    {
+      "id": 184,
+      "x": 1041,
+      "y": 1809,
+      "w": 47,
+      "h": 63,
+      "char": "👲🏻",
+      "name": "CUSTOM INPUT",
+      "unified": "1F472-1F3FB"
+    },
+    {
+      "id": 185,
+      "x": 918,
+      "y": 1638,
+      "w": 59,
+      "h": 66,
+      "char": "🏃",
+      "name": "RUNNER",
+      "unified": "1F3C3"
+    },
+    {
+      "id": 186,
+      "x": 843,
+      "y": 1585,
+      "w": 67,
+      "h": 40,
+      "char": "🚣‍♂️",
+      "name": "MAN ROWING BOAT",
+      "unified": "1F6A3-200D-2642-FE0F"
+    },
+    {
+      "id": 187,
+      "x": 915,
+      "y": 1484,
+      "w": 52,
+      "h": 67,
+      "char": "👌🏾",
+      "name": "CUSTOM INPUT",
+      "unified": "1F44C-1F3FE"
+    },
+    {
+      "id": 188,
+      "x": 968,
+      "y": 1554,
+      "w": 68,
+      "h": 69,
+      "char": "❤️‍🩹",
+      "name": "MENDING HEART",
+      "unified": "2764-FE0F-200D-1FA79"
+    },
+    {
+      "id": 189,
+      "x": 1262,
+      "y": 1850,
+      "w": 57,
+      "h": 66,
+      "char": "👨🏾‍🔧",
+      "name": "CUSTOM INPUT",
+      "unified": "1F468-1F3FE-200D-1F527"
+    },
+    {
+      "id": 190,
+      "x": 1139,
+      "y": 1836,
+      "w": 65,
+      "h": 66,
+      "char": "🤦🏾‍♂️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F926-1F3FE-200D-2642-FE0F"
+    },
+    {
+      "id": 191,
+      "x": 1090,
+      "y": 1733,
+      "w": 60,
+      "h": 67,
+      "char": "👨‍🦯‍➡️",
+      "name": "MAN WITH WHITE CANE FACING RIGHT",
+      "unified": "1F468-200D-1F9AF-200D-27A1-FE0F"
+    },
+    {
+      "id": 192,
+      "x": 1052,
+      "y": 1614,
+      "w": 51,
+      "h": 63,
+      "char": "🧝🏾",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9DD-1F3FE"
+    },
+    {
+      "id": 193,
+      "x": 1135,
+      "y": 1645,
+      "w": 61,
+      "h": 71,
+      "char": "💆🏾‍♂️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F486-1F3FE-200D-2642-FE0F"
+    },
+    {
+      "id": 194,
+      "x": 1000,
+      "y": 1691,
+      "w": 60,
+      "h": 71,
+      "char": "👩🏾‍🏭",
+      "name": "CUSTOM INPUT",
+      "unified": "1F469-1F3FE-200D-1F3ED"
+    },
+    {
+      "id": 195,
+      "x": 1196,
+      "y": 1756,
+      "w": 57,
+      "h": 67,
+      "char": "🧑🏾",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9D1-1F3FE"
+    },
+    {
+      "id": 196,
+      "x": 1243,
+      "y": 1672,
+      "w": 43,
+      "h": 67,
+      "char": "💡",
+      "name": "ELECTRIC LIGHT BULB",
+      "unified": "1F4A1"
+    },
+    {
+      "id": 197,
+      "x": 1301,
+      "y": 1764,
+      "w": 67,
+      "h": 66,
+      "char": "🧮",
+      "name": "ABACUS",
+      "unified": "1F9EE"
+    },
+    {
+      "id": 198,
+      "x": 1415,
+      "y": 1753,
+      "w": 66,
+      "h": 67,
+      "char": "💅",
+      "name": "NAIL POLISH",
+      "unified": "1F485"
+    },
+    {
+      "id": 199,
+      "x": 1332,
+      "y": 1680,
+      "w": 68,
+      "h": 62,
+      "char": "🤷‍♂️",
+      "name": "MAN SHRUGGING",
+      "unified": "1F937-200D-2642-FE0F"
+    },
+    {
+      "id": 200,
+      "x": 1453,
+      "y": 1665,
+      "w": 41,
+      "h": 65,
+      "char": "💂🏻",
+      "name": "CUSTOM INPUT",
+      "unified": "1F482-1F3FB"
+    },
+    {
+      "id": 201,
+      "x": 1463,
+      "y": 1569,
+      "w": 40,
+      "h": 67,
+      "char": "🫄",
+      "name": "PREGNANT PERSON",
+      "unified": "1FAC4"
+    },
+    {
+      "id": 202,
+      "x": 1357,
+      "y": 1580,
+      "w": 59,
+      "h": 68,
+      "char": "🕵🏻",
+      "name": "CUSTOM INPUT",
+      "unified": "1F575-1F3FB"
+    },
+    {
+      "id": 203,
+      "x": 1250,
+      "y": 1578,
+      "w": 70,
+      "h": 64,
+      "char": "🙌",
+      "name": "PERSON RAISING BOTH HANDS IN CELEBRATION",
+      "unified": "1F64C"
+    },
+    {
+      "id": 204,
+      "x": 1162,
+      "y": 1549,
+      "w": 66,
+      "h": 69,
+      "char": "🙇🏽",
+      "name": "CUSTOM INPUT",
+      "unified": "1F647-1F3FD"
+    },
+    {
+      "id": 205,
+      "x": 1254,
+      "y": 1472,
+      "w": 70,
+      "h": 62,
+      "char": "⚠️",
+      "name": "WARNING SIGN",
+      "unified": "26A0-FE0F"
+    },
+    {
+      "id": 206,
+      "x": 1354,
+      "y": 1483,
+      "w": 54,
+      "h": 64,
+      "char": "👩🏾‍🦼‍➡️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F469-1F3FE-200D-1F9BC-200D-27A1-FE0F"
+    },
+    {
+      "id": 207,
+      "x": 1082,
+      "y": 1510,
+      "w": 64,
+      "h": 62,
+      "char": "🫡",
+      "name": "SALUTING FACE",
+      "unified": "1FAE1"
+    },
+    {
+      "id": 208,
+      "x": 1012,
+      "y": 1446,
+      "w": 64,
+      "h": 64,
+      "char": "🧖‍♂️",
+      "name": "MAN IN STEAMY ROOM",
+      "unified": "1F9D6-200D-2642-FE0F"
+    },
+    {
+      "id": 209,
+      "x": 1092,
+      "y": 1380,
+      "w": 67,
+      "h": 65,
+      "char": "💇‍♂️",
+      "name": "MAN GETTING HAIRCUT",
+      "unified": "1F487-200D-2642-FE0F"
+    },
+    {
+      "id": 210,
+      "x": 1177,
+      "y": 1437,
+      "w": 55,
+      "h": 68,
+      "char": "👩🏿‍🍳",
+      "name": "CUSTOM INPUT",
+      "unified": "1F469-1F3FF-200D-1F373"
+    },
+    {
+      "id": 211,
+      "x": 966,
+      "y": 1359,
+      "w": 58,
+      "h": 65,
+      "char": "🧑🏾‍💻",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9D1-1F3FE-200D-1F4BB"
+    },
+    {
+      "id": 212,
+      "x": 1038,
+      "y": 1289,
+      "w": 50,
+      "h": 66,
+      "char": "👨🏾‍⚕️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F468-1F3FE-200D-2695-FE0F"
+    },
+    {
+      "id": 213,
+      "x": 1143,
+      "y": 1294,
+      "w": 66,
+      "h": 69,
+      "char": "🤦‍♀️",
+      "name": "WOMAN FACEPALMING",
+      "unified": "1F926-200D-2640-FE0F"
+    },
+    {
+      "id": 214,
+      "x": 1238,
+      "y": 1351,
+      "w": 59,
+      "h": 67,
+      "char": "🎅🏻",
+      "name": "CUSTOM INPUT",
+      "unified": "1F385-1F3FB"
+    },
+    {
+      "id": 215,
+      "x": 1271,
+      "y": 1258,
+      "w": 50,
+      "h": 63,
+      "char": "👩🏿‍💼",
+      "name": "CUSTOM INPUT",
+      "unified": "1F469-1F3FF-200D-1F4BC"
+    },
+    {
+      "id": 216,
+      "x": 1158,
+      "y": 1210,
+      "w": 67,
+      "h": 42,
+      "char": "👈🏻",
+      "name": "CUSTOM INPUT",
+      "unified": "1F448-1F3FB"
+    },
+    {
+      "id": 217,
+      "x": 1265,
+      "y": 1161,
+      "w": 50,
+      "h": 62,
+      "char": "🙎‍♂️",
+      "name": "MAN POUTING",
+      "unified": "1F64E-200D-2642-FE0F"
+    },
+    {
+      "id": 218,
+      "x": 1557,
+      "y": 1636,
+      "w": 49,
+      "h": 63,
+      "char": "🙍‍♂️",
+      "name": "MAN FROWNING",
+      "unified": "1F64D-200D-2642-FE0F"
+    },
+    {
+      "id": 219,
+      "x": 1650,
+      "y": 1585,
+      "w": 66,
+      "h": 65,
+      "char": "💝",
+      "name": "HEART WITH RIBBON",
+      "unified": "1F49D"
+    },
+    {
+      "id": 220,
+      "x": 1551,
+      "y": 1538,
+      "w": 65,
+      "h": 67,
+      "char": "🙅🏿",
+      "name": "CUSTOM INPUT",
+      "unified": "1F645-1F3FF"
+    },
+    {
+      "id": 221,
+      "x": 1648,
+      "y": 1501,
+      "w": 67,
+      "h": 47,
+      "char": "👉",
+      "name": "WHITE RIGHT POINTING BACKHAND INDEX",
+      "unified": "1F449"
+    },
+    {
+      "id": 222,
+      "x": 1445,
+      "y": 1469,
+      "w": 65,
+      "h": 68,
+      "char": "🧜🏾",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9DC-1F3FE"
+    },
+    {
+      "id": 223,
+      "x": 1540,
+      "y": 1446,
+      "w": 62,
+      "h": 64,
+      "char": "😞",
+      "name": "DISAPPOINTED FACE",
+      "unified": "1F61E"
+    },
+    {
+      "id": 224,
+      "x": 1629,
+      "y": 1396,
+      "w": 69,
+      "h": 70,
+      "char": "🫨",
+      "name": "SHAKING FACE",
+      "unified": "1FAE8"
+    },
+    {
+      "id": 225,
+      "x": 1322,
+      "y": 1378,
+      "w": 68,
+      "h": 63,
+      "char": "🦸🏼",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9B8-1F3FC"
+    },
+    {
+      "id": 226,
+      "x": 1422,
+      "y": 1373,
+      "w": 57,
+      "h": 67,
+      "char": "👩‍🎓",
+      "name": "WOMAN STUDENT",
+      "unified": "1F469-200D-1F393"
+    },
+    {
+      "id": 227,
+      "x": 1515,
+      "y": 1352,
+      "w": 54,
+      "h": 65,
+      "char": "👨🏾‍🔬",
+      "name": "CUSTOM INPUT",
+      "unified": "1F468-1F3FE-200D-1F52C"
+    },
+    {
+      "id": 228,
+      "x": 1750,
+      "y": 1423,
+      "w": 48,
+      "h": 67,
+      "char": "👷🏿",
+      "name": "CUSTOM INPUT",
+      "unified": "1F477-1F3FF"
+    },
+    {
+      "id": 229,
+      "x": 1713,
+      "y": 1334,
+      "w": 69,
+      "h": 66,
+      "char": "👩🏼‍🦱",
+      "name": "CUSTOM INPUT",
+      "unified": "1F469-1F3FC-200D-1F9B1"
+    },
+    {
+      "id": 230,
+      "x": 1593,
+      "y": 1306,
+      "w": 69,
+      "h": 65,
+      "char": "✍️",
+      "name": "WRITING HAND",
+      "unified": "270D-FE0F"
+    },
+    {
+      "id": 231,
+      "x": 1798,
+      "y": 1249,
+      "w": 62,
+      "h": 73,
+      "char": "🕵🏾‍♂️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F575-1F3FE-200D-2642-FE0F"
+    },
+    {
+      "id": 232,
+      "x": 1682,
+      "y": 1249,
+      "w": 49,
+      "h": 64,
+      "char": "🤵🏾‍♂️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F935-1F3FE-200D-2642-FE0F"
+    },
+    {
+      "id": 233,
+      "x": 1371,
+      "y": 1271,
+      "w": 47,
+      "h": 66,
+      "char": "🫅🏿",
+      "name": "CUSTOM INPUT",
+      "unified": "1FAC5-1F3FF"
+    },
+    {
+      "id": 234,
+      "x": 1465,
+      "y": 1257,
+      "w": 42,
+      "h": 68,
+      "char": "🤰",
+      "name": "PREGNANT WOMAN",
+      "unified": "1F930"
+    },
+    {
+      "id": 235,
+      "x": 1367,
+      "y": 1165,
+      "w": 65,
+      "h": 67,
+      "char": "🔑",
+      "name": "KEY",
+      "unified": "1F511"
+    },
+    {
+      "id": 236,
+      "x": 1467,
+      "y": 1142,
+      "w": 45,
+      "h": 67,
+      "char": "✌️",
+      "name": "VICTORY HAND",
+      "unified": "270C-FE0F"
+    },
+    {
+      "id": 237,
+      "x": 1547,
+      "y": 1223,
+      "w": 51,
+      "h": 68,
+      "char": "👩🏻‍⚕️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F469-1F3FB-200D-2695-FE0F"
+    },
+    {
+      "id": 238,
+      "x": 1620,
+      "y": 1166,
+      "w": 58,
+      "h": 69,
+      "char": "🧔🏾",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9D4-1F3FE"
+    },
+    {
+      "id": 239,
+      "x": 1768,
+      "y": 1172,
+      "w": 46,
+      "h": 65,
+      "char": "🫸🏻",
+      "name": "CUSTOM INPUT",
+      "unified": "1FAF8-1F3FB"
+    },
+    {
+      "id": 240,
+      "x": 1852,
+      "y": 1165,
+      "w": 73,
+      "h": 55,
+      "char": "👁️",
+      "name": "EYE",
+      "unified": "1F441-FE0F"
+    },
+    {
+      "id": 241,
+      "x": 1540,
+      "y": 1097,
+      "w": 63,
+      "h": 65,
+      "char": "😪",
+      "name": "SLEEPY FACE",
+      "unified": "1F62A"
+    },
+    {
+      "id": 242,
+      "x": 1683,
+      "y": 1099,
+      "w": 70,
+      "h": 64,
+      "char": "👩🏽‍🦰",
+      "name": "CUSTOM INPUT",
+      "unified": "1F469-1F3FD-200D-1F9B0"
+    },
+    {
+      "id": 243,
+      "x": 1803,
+      "y": 1091,
+      "w": 67,
+      "h": 44,
+      "char": "🫶",
+      "name": "HEART HANDS",
+      "unified": "1FAF6"
+    },
+    {
+      "id": 244,
+      "x": 1338,
+      "y": 1071,
+      "w": 65,
+      "h": 69,
+      "char": "👍",
+      "name": "THUMBS UP SIGN",
+      "unified": "1F44D"
+    },
+    {
+      "id": 245,
+      "x": 1212,
+      "y": 1063,
+      "w": 46,
+      "h": 68,
+      "char": "☝🏿",
+      "name": "CUSTOM INPUT",
+      "unified": "261D-1F3FF"
+    },
+    {
+      "id": 246,
+      "x": 1436,
+      "y": 1038,
+      "w": 61,
+      "h": 68,
+      "char": "👰🏻‍♀️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F470-1F3FB-200D-2640-FE0F"
+    },
+    {
+      "id": 247,
+      "x": 1273,
+      "y": 992,
+      "w": 69,
+      "h": 70,
+      "char": "💇‍♀️",
+      "name": "WOMAN GETTING HAIRCUT",
+      "unified": "1F487-200D-2640-FE0F"
+    },
+    {
+      "id": 248,
+      "x": 1380,
+      "y": 950,
+      "w": 65,
+      "h": 68,
+      "char": "🧗🏿‍♀️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F9D7-1F3FF-200D-2640-FE0F"
+    },
+    {
+      "id": 249,
+      "x": 1510,
+      "y": 981,
+      "w": 61,
+      "h": 69,
+      "char": "⛹🏻‍♂️",
+      "name": "CUSTOM INPUT",
+      "unified": "26F9-1F3FB-200D-2642-FE0F"
+    },
+    {
+      "id": 250,
+      "x": 1160,
+      "y": 956,
+      "w": 61,
+      "h": 67,
+      "char": "👨🏻‍🦯",
+      "name": "CUSTOM INPUT",
+      "unified": "1F468-1F3FB-200D-1F9AF"
+    },
+    {
+      "id": 251,
+      "x": 1314,
+      "y": 893,
+      "w": 54,
+      "h": 65,
+      "char": "👩🏼‍🔧",
+      "name": "CUSTOM INPUT",
+      "unified": "1F469-1F3FC-200D-1F527"
+    },
+    {
+      "id": 252,
+      "x": 1455,
+      "y": 886,
+      "w": 64,
+      "h": 65,
+      "char": "🤌",
+      "name": "PINCHED FINGERS",
+      "unified": "1F90C"
+    },
+    {
+      "id": 253,
+      "x": 1582,
+      "y": 909,
+      "w": 44,
+      "h": 70,
+      "char": "🏌",
+      "name": "PERSON GOLFING",
+      "unified": "1F3CC-FE0F"
+    },
+    {
+      "id": 254,
+      "x": 1607,
+      "y": 1031,
+      "w": 63,
+      "h": 67,
+      "char": "🙇🏾‍♀️",
+      "name": "CUSTOM INPUT",
+      "unified": "1F647-1F3FE-200D-2640-FE0F"
+    },
+    {
+      "id": 255,
+      "x": 1669,
+      "y": 954,
+      "w": 58,
+      "h": 67,
+      "char": "👩🏻‍🎤",
+      "name": "CUSTOM INPUT",
+      "unified": "1F469-1F3FB-200D-1F3A4"
+    },
+    {
+      "id": 256,
+      "x": 1740,
+      "y": 1014,
+      "w": 63,
+      "h": 63,
+      "char": "☹️",
+      "name": "FROWNING FACE",
+      "unified": "2639-FE0F"
+    },
+    {
+      "id": 257,
+      "x": 1848,
+      "y": 981,
+      "w": 69,
+      "h": 63,
+      "char": "💁🏼",
+      "name": "CUSTOM INPUT",
+      "unified": "1F481-1F3FC"
+    },
+    {
+      "id": 258,
+      "x": 962,
+      "y": 963,
+      "w": 123,
+      "h": 123,
+      "char": "b",
+      "name": "CUSTOM INPUT",
+      "unified": "0062"
+    }
+  ],
+  "nextId": 259
+}
