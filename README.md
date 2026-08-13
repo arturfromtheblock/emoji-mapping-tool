@@ -4,9 +4,9 @@ A browser-based tool for highlighting areas in images and assigning emojis to th
 
 Link: https://bitcointalk.org/index.php?topic=5584952.0$0
 
-<img src="https://raw.githubusercontent.com/arturfromtheblock/emoji-mapping-tool/refs/heads/master/1.png">
+<img src="https://raw.githubusercontent.com/arturfromtheblock/emoji-mapping-tool/refs/heads/main/1.png">
 
-<img src="https://raw.githubusercontent.com/arturfromtheblock/emoji-mapping-tool/refs/heads/master/2.png">
+<img src="https://raw.githubusercontent.com/arturfromtheblock/emoji-mapping-tool/refs/heads/main/2.png">
 
 ---
 
